@@ -1,7 +1,17 @@
 "use server"
 
-export async function scrapeAmazonProducts(productUrl: string) {
+import { scrapeAmazonProducts } from "../scraper";
 
-    if(!productUrl) return;
+export async function scrapeAndStoreAmazonProducts(productUrl: string) {
+
+    if (!productUrl) return;
+    try {
+        const scrapedProduct = await scrapeAmazonProducts(productUrl);
+    }
+    catch (error: any) {
+
+        throw new Error(`FAILED TO SCRAPE AMAZON PRODUC: ${error.message}`);
+
+    }
 
 }
