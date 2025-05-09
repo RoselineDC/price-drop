@@ -1,23 +1,24 @@
 import React from 'react'
 import Image from 'next/image'
+import Seachbar from '@/components/Seachbar'
+import HeroCarosel from '@/components/HeroCarosel'
 
 const Home = () => {
   return (
     <>
-      <section className='px-6 border-2 md:px-20 py-24 border-red-500'>
-        <div className='flex mx-xl:flex-col gap-16'>
-          <div className='flex flex-col justify-center '>
-            <p className='small-text'>
-              Lavishly designed to be the best at your convenience
-              <Image
-                src='/assets/icons/arrow-right.svg'
-                alt='arrow'
+      <section className="px-6 md:px-20 py-24">
+        <div className="flex max-xl:flex-col gap-16">
+          <div className="flex flex-col justify-center"> 
+            <p className="small-text">
+            Lavishly designed to be the best at your convenience
+              <Image 
+                src="/assets/icons/arrow-right.svg"
+                alt="arrow-right"
                 width={16}
                 height={16}
-                // className='ml-2 inline'              
               />
-
             </p>
+
             <h1 className='head-text'>
               BEST PRICES IN YOUR FINGERTIPS ... <br></br>
               <span className='text-primary'> PRICE DROP</span>
@@ -30,14 +31,12 @@ const Home = () => {
              <i className='italic text-primary'> <br></br>LAVISH DEALS IS HERE</i> <br></br>
 
             </p>
-            Search Bar
 
-
+            <Seachbar />
           </div>
-          HeroCorausel
 
+          <HeroCarosel />
         </div>
-
       </section>
       <section className='trending-section'>
         <h2 className='section-text'>
