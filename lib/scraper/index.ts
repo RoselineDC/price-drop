@@ -1,3 +1,7 @@
+import axios from 'axios';
+import * as cheerio from 'cheerio';
+
+
 export async function scrapeAmazonProducts(Url: string) {
     // check if url exist
     if (!Url) return;
@@ -17,8 +21,13 @@ export async function scrapeAmazonProducts(Url: string) {
          rejectUnauthorized: false,
     }
     try {
+        // fatching the products 
+        // axios for making api calls
+        // cheerio for parsing and manipulating the HTML
+        const response = await axios.get(Url, options);
 
 
+        console.log('response', response.data);
     }
     catch (error: any) {
         throw new Error(`Error scraping Amazon products: ${error.message}`);

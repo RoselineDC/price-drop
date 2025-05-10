@@ -1,7 +1,17 @@
-// filepath: c:\Users\rosel\projects\price-drop\next.config.ts
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  experimental: {
+    serverActions: {
+      enabled: true
+    }
+  },
+  serverExternalPackages: [
+    "mongoose"
+  ],
+  images: {
+    domains: [
+      'm.media-amazon.com'
+    ]
+  },
 };
 
 export default nextConfig;
