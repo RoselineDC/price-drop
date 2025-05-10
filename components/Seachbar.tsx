@@ -1,5 +1,5 @@
 "use client"
-import { scrapeAndStoreAmazonProducts } from "@/lib/action";
+import { scrapeAndStoreProducts } from "@/lib/action";
 import { use } from "react"
 import { FormEvent, useState } from "react"
 
@@ -44,7 +44,7 @@ const Seachbar = () => {
         try{
             setIsLoading;
             // scrape first product
-            const product = await scrapeAndStoreAmazonProducts(searchPrompt);
+            const product = await scrapeAndStoreProducts(searchPrompt);
             
         }
         catch(error){
