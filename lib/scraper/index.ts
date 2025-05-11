@@ -1,5 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import { extractPrice } from '../utils';
+
 
 
 export async function scrapeAmazonProducts(Url: string) {
@@ -16,7 +18,7 @@ export async function scrapeAmazonProducts(Url: string) {
             username: `${username}-session-${session_id}`,
             password,
          },
-         host: 'brd.superproxy.io',
+         host: 'brd.superproxyJ.io',
          port,
          rejectUnauthorized: false,
     }
@@ -30,8 +32,18 @@ export async function scrapeAmazonProducts(Url: string) {
 
         // extracting the product title
         const title = $('#productTitle').text().trim();
-        // print product title
-        console.log('title', title);
+       
+
+        // extracting the product price
+        const currentPrice = extractPrice(
+            // pass all that is related to price
+            $('.priceToPay span.a-price-whole'),
+            $('a.size.base.a-color-price'),
+            $('.a-button-selected .a-color-base'),
+            $('.a-price.a-text-price')
+        );
+         // print product title
+        console.log("TiTLE: ", title, "pRICE:", currentPrice);
 
 
 
