@@ -17,10 +17,10 @@ export async function scrapeAmazonProducts(Url: string) {
         auth: {
             username: `${username}-session-${session_id}`,
             password,
-         },
-         host: 'brd.superproxyJ.io',
-         port,
-         rejectUnauthorized: false,
+        },
+        host: 'brd.superproxyJ.io',
+        port,
+        rejectUnauthorized: false,
     }
     try {
         // fatching the products 
@@ -32,7 +32,7 @@ export async function scrapeAmazonProducts(Url: string) {
 
         // extracting the product title
         const title = $('#productTitle').text().trim();
-       
+
 
         // extracting the product price
         const currentPrice = extractPrice(
@@ -42,8 +42,17 @@ export async function scrapeAmazonProducts(Url: string) {
             $('.a-button-selected .a-color-base'),
             $('.a-price.a-text-price')
         );
-         // print product title
-        console.log("TiTLE: ", title, "pRICE:", currentPrice);
+        const originalPrice = extractPrice(
+            $('#priceblock_ourprice'),
+            $('.a-price.a-text-price span.a-offscreen'),
+            $('#listPrice'),
+            $('#priceblock_dealprice'),
+            $('a.size.base.a-color-price'),
+
+
+        );
+        // print product title
+        console.log({ title, currentPrice, originalPrice });
 
 
 

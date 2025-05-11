@@ -4,7 +4,7 @@ export function extractPrice(...elements: any) {
         const priceText = element.text().trim();
 
         //chect uf priceText exist
-        if (priceText) return priceText.replace(/\D/g, '');
+        if (priceText) return priceText.replace(/[^]d./g, '');
 
 
     }
