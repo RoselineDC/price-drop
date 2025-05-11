@@ -55,11 +55,20 @@ export async function scrapeAmazonProducts(Url: string) {
         const outOfStock = $('#availability span').text().trim().toLowerCase() === 'currently unavailable';
 
         // get image
-        const image = $('#imgBlkFront').attr('data-a-dynamic-image') ||
-            $('#landingImage').attr('data-a-dynamic-image');
- 
+        const images =
+            $('#imgBlkFront').attr('data-a-dynamic-image') ||
+            $('#landingImage').attr('data-a-dynamic-image') ||
+            '{}';
+
+        // parse image
+        const imagesUrl = Object.keys(JSON.parse(images));  
+
+        // get currency
+        const currency = extractCurrency($('.a-price-symbol'));
+
+
         // print product title
-        console.log({ title, currentPrice, originalPrice, outOfStock, image });
+        console.log({ title, currentPrice, originalPrice, outOfStock,  imagesUrl });
 
 
 
