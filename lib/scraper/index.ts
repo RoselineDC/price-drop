@@ -1,6 +1,6 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
-import { extractPrice } from '../utils';
+import { extractPrice, extractCurrency, extractDescription } from '../utils';
 
 
 
@@ -51,6 +51,9 @@ export async function scrapeAmazonProducts(Url: string) {
 
 
         );
+
+        // extract description
+        const description = extractDescription($);
         // check out of stock
         const outOfStock = $('#availability span').text().trim().toLowerCase() === 'currently unavailable';
 
@@ -61,18 +64,34 @@ export async function scrapeAmazonProducts(Url: string) {
             '{}';
 
         // parse image
-        const imagesUrl = Object.keys(JSON.parse(images));  
+        const imagesUrl = Object.keys(JSON.parse(images));
 
         // get currency
         const currency = extractCurrency($('.a-price-symbol'));
 
+        // get discount rate
+        const discountRate = $('.savingsPercentage').text().replace(/[-%]/g, ``);
 
-        // print product title
-        console.log({ title, currentPrice, originalPrice, outOfStock,  imagesUrl });
-
-
-
-
+        // contructing the product object
+        const data = {
+            Url,
+            currency: currency || 'ZAR',
+            image: imagesUrl[0],
+            title,
+            currentPrice: Number(currentPrice) ||  Number(originalPrice),
+            originalPrice: Number(originalPrice) || Number(currentPrice),
+            description: description || 'No description available',
+            priceHistory: [],
+            discountRate: Number(discountRate),
+           category: 'category',
+            reviewsCount: 100,
+            stars: 4.5,
+            isOutOfStock: outOfStock,
+            lowestPrice: Number(currentPrice) || Number(originalPrice),
+            highestPrice: Number(originalPrice) || Number(currentPrice),
+            averagePrice: Number(currentPrice) || Number(originalPrice),
+        }
+        return data;  
 
         // console.log('response', response.data);
     }
