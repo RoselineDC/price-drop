@@ -9,6 +9,7 @@ export function extractPrice(...elements: any) {
 
         //chect uf priceText exist
         if (priceText) {
+          // test hejklsd
             const cleanPrrice = priceText.replace(/[^\d.]/g, '');
 
 
@@ -73,7 +74,10 @@ export function getLowestPrice(priceList: PriceHistoryItem[]) {
       lowestPrice = priceList[i];
     }
   }
+  //  save
 
   return lowestPrice.price;
 }
+
+// to remove 
 
