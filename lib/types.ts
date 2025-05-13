@@ -4,6 +4,7 @@ export type PriceHistoryItem = {
 
 export type User = {
   email: string;
+//   just to check output
 };
 
 export type Product = {

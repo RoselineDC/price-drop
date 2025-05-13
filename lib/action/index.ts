@@ -36,14 +36,16 @@ export async function scrapeAndStoreProducts(productUrl: string) {
                 ...scrapedProduct,
                 priceHistory: updatedPriceHistory,
                 lowestPrice: getLowestPrice(updatedPriceHistory),
-                
+                // for test
+
             }
             
             
+            // update product
+            
+          
         }
                       
-                
-        }
 
         
     }
@@ -54,3 +56,5 @@ export async function scrapeAndStoreProducts(productUrl: string) {
     }
 
 }
+// 
+// this is for test
