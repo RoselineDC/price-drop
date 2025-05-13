@@ -36,7 +36,6 @@ export async function scrapeAndStoreProducts(productUrl: string) {
                 ...scrapedProduct,
                 priceHistory: updatedPriceHistory,
                 lowestPrice: getLowestPrice(updatedPriceHistory),
-                // for test
 
             }
             
