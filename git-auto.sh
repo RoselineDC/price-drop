@@ -1,6 +1,9 @@
 #!/bin/bash
 
-echo "íº€ Git Auto Script Triggered at $(date)" >> ~/git-auto.log
+set -x
+echo "íº€ Git Auto Script Triggered at $(date)" >> ./git-auto.log
+echo "Log entry added." >> ./git-auto.log
+
 cd "$(dirname "$0")"
 cd "$(git rev-parse --show-toplevel)"
 

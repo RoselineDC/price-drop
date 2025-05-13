@@ -1,5 +1,6 @@
 import { PriceHistoryItem, Product } from "./types";
 
+// test thei 
 
 export function extractPrice(...elements: any) {
     // mapp over element 
