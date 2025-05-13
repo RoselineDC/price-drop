@@ -11,7 +11,9 @@ export async function scrapeAndStoreProducts(productUrl: string) {
     if (!productUrl) return;
     try {
         // connect tp mongodb
+        // testing watcher 
         connectToDB();
+
 
 
         const scrapedProduct = await scrapeAmazonProducts(productUrl);
@@ -23,6 +25,7 @@ export async function scrapeAndStoreProducts(productUrl: string) {
             url: scrapedProduct.Url,
 
         });
+        // DD THI 
         // check product
         if (existingProduct) {
             const updatedPriceHistory: any = [

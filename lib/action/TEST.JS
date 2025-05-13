@@ -1,0 +1,1 @@
+const rise  = function (x) {return x + 1;};
