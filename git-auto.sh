@@ -1,11 +1,7 @@
 #!/bin/bash
 
 set -x
-echo "íº€ Git Auto Script Triggered at $(date)" >> ./git-auto.log
-echo "Log entry added." >> ./git-auto.log
 
-cd "$(dirname "$0")"
-cd "$(git rev-parse --show-toplevel)"
 
 if ! git config --global user.email > /dev/null; then
 	    git config --global user.email "roseline.danga@gmail.com"
