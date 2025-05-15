@@ -60,7 +60,7 @@ export async function scrapeAndStoreProducts(productUrl: string) {
                 upsert: true,
             }
         );
-        revalidatePath(`/products/${newProduct._id`);});
+        revalidatePath(`/products/${newProduct._id`););
                       
 
         
