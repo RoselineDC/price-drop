@@ -62,5 +62,8 @@ function getAveragePrice(updatedPriceHistory: any): number {
     throw new Error("Function not implemented.");
 }
 export async function getProductById(productId: string) {
+    try{
+        
+    }
     
 }
