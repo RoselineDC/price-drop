@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Seachbar from '@/components/Seachbar'
 import HeroCarosel from '@/components/HeroCarosel'
-import {}
+import {getA}
 
 const Home = () => {
   return (
