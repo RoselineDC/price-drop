@@ -1,6 +1,8 @@
 import React from 'react'
 
-interface Pr
+interface Props {
+    product: any
+}
 
 const ProductCard = ({product }: Props) => {
   return (
