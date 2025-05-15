@@ -70,6 +70,8 @@ export async function getProductById(productId: string) {
         });
         if (!product) return null;
 
+        return product
+
     } catch (error) {
         
     }
