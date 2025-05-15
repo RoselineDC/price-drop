@@ -1,6 +1,6 @@
 import { Product } from '@/lib/types';
 import React from 'react'
-
+import Link from 'next/link';
 
 interface Props {
     product: Product
