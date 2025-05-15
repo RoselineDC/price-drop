@@ -4,6 +4,7 @@ import Seachbar from '@/components/Seachbar'
 import HeroCarosel from '@/components/HeroCarosel'
 import { getAllProducts } from '@/lib/action'
 
+
 const Home = async () => {
   const allProducts = await getAllProducts();
 
