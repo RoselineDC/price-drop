@@ -65,7 +65,7 @@ export async function getProductById(productId: string) {
     try{
         connectToDB();
         // fetch product
-        cons
+        const
 
     } catch (error) {
         
