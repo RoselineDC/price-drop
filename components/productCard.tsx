@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface Props {
-    product: P
+    product: Product
 }
 
 const ProductCard = ({product }: Props) => {
