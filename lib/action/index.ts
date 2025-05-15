@@ -78,4 +78,4 @@ export async function getProductById(productId: string) {
     }
     
 }
- export async 
+ export async function get
