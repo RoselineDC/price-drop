@@ -74,6 +74,7 @@ export async function getProductById(productId: string) {
 
     } catch (error) {
         
+        
     }
     
 }
