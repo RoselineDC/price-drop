@@ -46,7 +46,7 @@ const Home = async () => {
           Trending in Tech
         </h2>
         <div className='flex  flex-wrap gap-x-8 gap-y-16'>
-          {['Apple Iphone 14 Pro', 'Samsung Galaxy S23 Ultra', 'Google Pixel 7 Pro'].map
+          {.map
           ((product) => (
             <div>{product}</div>
           ))}
