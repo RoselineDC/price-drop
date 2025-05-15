@@ -5,7 +5,7 @@ import HeroCarosel from '@/components/HeroCarosel'
 import { getAllProducts } from '@/lib/action'
 
 const Home = async () => {
-  const 
+  const allProducts 
 
   return (
     <>
