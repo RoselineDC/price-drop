@@ -30,7 +30,7 @@ const ProductCard = ({ product }: Props) => {
                     {product?.currency}
                 </span>
                 <span>
-                    {product?.currentPrice}
+                    {product?.curentPrice}
                 </span>
             </p>
         </div>
