@@ -7,7 +7,7 @@ interface Props {
 
 const ProductCard = ({product }: Props) => {
   return (
-    <Link href={`/products/${product._id}`}>productCard</Link>
+    <Link href={`/products/${product._id}`}>P</Link>
   )
 }
 
