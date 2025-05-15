@@ -15,7 +15,7 @@ const isValidAmazonProductUrl = (url: string) => {
             hostname.includes('amazon') ||
             hostname.endsWith('amazon') ||
             hostname.endsWith('takealot.com')
-            hostname.endsWith
+            hostname.endsWith()
         ) {
             return true;
 
