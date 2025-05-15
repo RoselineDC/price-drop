@@ -82,4 +82,9 @@ export async function getProductById(productId: string) {
     try{
         connectToDB();
         // fetch product
+    } catch (error) {
+        console.log(error);
+        
     }
+    
+}
