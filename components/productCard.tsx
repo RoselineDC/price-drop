@@ -1,6 +1,7 @@
 import { Product } from '@/lib/types';
 import React from 'react'
 
+
 interface Props {
     product: Product
 }
