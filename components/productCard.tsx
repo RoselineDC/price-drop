@@ -25,7 +25,7 @@ const ProductCard = ({ product }: Props) => {
             <p className="text-black opacity-50 text-lg capitalize">
                 {product.category}
             </p>
-            <p className>
+            <p className="text-black opacity-50 text-lg">
                 <span>
                     {product?.currency}
                 </span>
