@@ -65,7 +65,9 @@ export async function getProductById(productId: string) {
     try{
         connectToDB();
         // fetch product
-        const product = await Product.findOne({})
+        const product = await Product.findOne({
+            _id: productId
+        });
 
     } catch (error) {
         
