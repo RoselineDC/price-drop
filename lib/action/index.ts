@@ -68,7 +68,7 @@ export async function getProductById(productId: string) {
         const product = await Product.findOne({
             _id: productId
         });
-        if ()
+        if (!product) return null;
 
     } catch (error) {
         
