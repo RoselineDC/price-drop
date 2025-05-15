@@ -49,8 +49,7 @@ const Home = async () => {
           {allProducts?.map((product) => {
             <div>{product}</div>
 
-          })
-          }
+          })}
           
             
         
