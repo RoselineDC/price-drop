@@ -13,7 +13,7 @@ const ProductCard = ({ product }: Props) => {
        alt={product.title}
        width={200}
        height={200}
-       className="product-image"
+       className="product-card"
         />
     </Link>
   );
