@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const ProductDetails = () => {
+const ProductDetails = ( parama: ) => {
   return (
 	<div>
 	  {/* Product details content goes here */}
