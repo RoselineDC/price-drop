@@ -37,11 +37,6 @@ export async function scrapeAndStoreProducts(productUrl: string) {
                 highestPrice: getLowestPrice(updatedPriceHistory),
                 averagePrice: getAveragePrice(updatedPriceHistory),
             }
-            
-            
-            // update product
-            
-          
         }
         const newProduct = await Product. findOneAndUpdate(
             {
