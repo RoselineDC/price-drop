@@ -10,9 +10,7 @@ export async function scrapeAndStoreProducts(productUrl: string) {
 
     if (!productUrl) return;
     try {
-        // connect tp mongodb
-        // testing watcher 
-        connectToDB();
+         connectToDB();
 
 
 
