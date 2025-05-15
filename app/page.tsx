@@ -46,7 +46,7 @@ const Home = async () => {
           Trending in Tech
         </h2>
         <div className='flex  flex-wrap gap-x-8 gap-y-16'>
-          {allProducts.map((product) => product).slice(0, 4).map(
+          {allProducts.map((product) => product)
             
           )
           ((product) => (
