@@ -50,7 +50,7 @@ export async function scrapeAndStoreProducts(productUrl: string) {
             
           
         }
-        const newProduct = await P
+        const newProduct = await Product
                       
 
         
