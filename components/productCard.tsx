@@ -19,7 +19,7 @@ const ProductCard = ({ product }: Props) => {
         />
       </div>
 
-      <div className
+      <div className=
     </Link>
   );
 };
