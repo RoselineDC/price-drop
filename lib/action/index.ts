@@ -84,7 +84,7 @@ export async function getProductById(productId: string) {
         // fetch product
         const products = await Product.find({});
 
-        return products
+        return products;
     } catch (error) {
         console.log(error);
         
