@@ -61,5 +61,4 @@ export async function scrapeAndStoreProducts(productUrl: string) {
 function getAveragePrice(updatedPriceHistory: any): number {
     throw new Error("Function not implemented.");
 }
-// 
-// this is for test
+export 
