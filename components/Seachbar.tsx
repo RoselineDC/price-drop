@@ -41,7 +41,7 @@ const Seachbar = () => {
         // check if url is valid
         const isValidLink = isValidAmazonProductUrl(searchPrompt);
         if(!isValidLink){
-            return alert('Please enter a valid Amazon product URL')
+            return alert('Please enter a valid Amazon or Takealot  product URL')
         }
         try{
             setIsLoading;
