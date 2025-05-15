@@ -1,5 +1,5 @@
 "use server"
-import reva
+import { revalidatePath } from "next/cache";
 import { connect } from "http2";
 import { scrapeAmazonProducts } from "../scraper";
 import { connectToDB } from "../mongoose";
