@@ -39,7 +39,8 @@ export async function scrapeAndStoreProducts(productUrl: string) {
                 ...scrapedProduct,
                 priceHistory: updatedPriceHistory,
                 lowestPrice: getLowestPrice(updatedPriceHistory),
-                
+                highestPrice: getLowestPrice(updatedPriceHistory),
+                averagePrice: updatedPriceHistory.reduce((a, b) => a + b.price, 0) / updatedPriceHistory.length
 
 
             }
