@@ -50,6 +50,7 @@ const Home = async () => {
             <div>{product}</div>
 
           })
+          }
           
             
         
