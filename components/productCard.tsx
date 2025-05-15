@@ -32,7 +32,7 @@ const ProductCard = ({ product }: Props) => {
                 <span>
                     {product?.currentPrice}
                 </span>
-                <
+                <span></span>
             </p>
         </div>
       </div>
