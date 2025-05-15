@@ -64,6 +64,6 @@ function getAveragePrice(updatedPriceHistory: any): number {
 export async function getProductById(productId: string) {
     try{
 
-    } catc
+    } catch
     
 }
