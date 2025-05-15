@@ -19,7 +19,6 @@ export async function scrapeAndStoreProducts(productUrl: string) {
         let product = scrapedProduct;
         const existingProduct = await Product.findOne({
             url: scrapedProduct.Url,
-
         });
         // DD THI 
         // check product
