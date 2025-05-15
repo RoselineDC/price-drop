@@ -78,4 +78,9 @@ export async function getProductById(productId: string) {
     }
     
 }
- export async function getAll
+ export async function getAllProducts() {
+    try{
+        connectToDB();
+        // fetch product
+        const products = await Product.find({});
+        if (!products) return null;
