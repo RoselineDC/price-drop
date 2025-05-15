@@ -20,7 +20,7 @@ const ProductCard = ({ product }: Props) => {
       </div>
 
       <div className="flex flex-col gap-3">
-        
+        <h3
       </div>
     </Link>
   );
