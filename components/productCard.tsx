@@ -12,7 +12,7 @@ const ProductCard = ({ product }: Props) => {
       <img src={product.image}
        alt={product.title}
        width={200}
-       height={}
+       height={200}
         />
     </Link>
   );
