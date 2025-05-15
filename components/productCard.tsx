@@ -16,7 +16,7 @@ const ProductCard = ({ product }: Props) => {
        height={200}
        className="product-card_img"
         />
-        ></div>
+        </div>
     </Link>
   );
 };
