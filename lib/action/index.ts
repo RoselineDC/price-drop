@@ -50,7 +50,17 @@ export async function scrapeAndStoreProducts(productUrl: string) {
             
           
         }
-        const newProduct = await Product. find
+        const newProduct = await Product. findOneAndUpdate(
+            {
+                url: product.Url,
+            },
+            product,
+            {
+                new: true,
+                upsert: true,
+            }
+        );
+        return newProduct
                       
 
         
