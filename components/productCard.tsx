@@ -27,7 +27,7 @@ const ProductCard = ({ product }: Props) => {
             </p>
             <P>
                 <span>
-                    
+                    {}
                 </span>
             </P>
         </div>
