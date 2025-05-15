@@ -50,6 +50,7 @@ export async function scrapeAndStoreProducts(productUrl: string) {
             
           
         }
+        const new
                       
 
         
