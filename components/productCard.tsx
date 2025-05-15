@@ -23,7 +23,7 @@ const ProductCard = ({ product }: Props) => {
         <h3 className="product-title">{product.title}</h3>
         <div className="flex justify-between">
             <p>
-                {}
+                {product.category}
             </p>
         </div>
       </div>
