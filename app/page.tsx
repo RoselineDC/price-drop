@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Seachbar from '@/components/Seachbar'
 import HeroCarosel from '@/components/HeroCarosel'
-import {getA}
+import { getAllProducts } from '@/lib/action'
 
 const Home = () => {
   return (
