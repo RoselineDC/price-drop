@@ -18,6 +18,8 @@ const ProductCard = ({ product }: Props) => {
           className="product-card_img"
         />
       </div>
+
+      <di
     </Link>
   );
 };
