@@ -61,6 +61,6 @@ export async function scrapeAndStoreProducts(productUrl: string) {
 function getAveragePrice(updatedPriceHistory: any): number {
     throw new Error("Function not implemented.");
 }
-export async function getProductById(productId:type) {
+export async function getProductById(productId: string) {
     
 }
