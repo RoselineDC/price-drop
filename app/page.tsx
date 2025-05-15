@@ -5,6 +5,7 @@ import HeroCarosel from '@/components/HeroCarosel'
 import { getAllProducts } from '@/lib/action'
 
 const Home = () => {
+  
   return (
     <>
       <section className="px-6 md:px-20 py-24">
