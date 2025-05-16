@@ -34,7 +34,9 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 href={product.title}
                 target="_blank"
                 className=" text-base text-black opacity-50"
-              ></Link>
+              >
+                Visit Product
+              </Link>
             </div>
           </div>
         </div>
