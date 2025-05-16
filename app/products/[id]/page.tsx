@@ -18,8 +18,8 @@ const ProductDetails = async  ( {params: { id }}: Props) => {
       <img 
       src={product.image}
       alt={product.title}
-      width={200}
-      height={200}      
+      width={580}
+      height={400}      
       />
     </div>
 	</div>
