@@ -12,7 +12,7 @@ export type User = {
 // 
 
 export type Product = {
-  _id?: string;
+  _id: string;
   url: string;
   currency: string;
   image: string;
@@ -31,6 +31,7 @@ export type Product = {
   isOutOfStock: Boolean;
   users?: User[];
 };
+
 
 export type NotificationType =
   | "WELCOME"
