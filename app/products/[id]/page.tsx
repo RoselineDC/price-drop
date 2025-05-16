@@ -13,7 +13,7 @@ const ProductDetails = async  ( {params: { id }}: Props) => {
     const product = await getProductById(id);
     if(!product) redirect('/')
   return (
-	<div>
+	<div className>
 	  {id}
 	</div>
   );
