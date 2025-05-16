@@ -32,7 +32,7 @@ const ProductDetails = async  ( {params: { id }}: Props) => {
             {product.title}
             </p>
             <Link href={product.title} 
-                        
+            target='_blank'            
             />
           </div>
 
