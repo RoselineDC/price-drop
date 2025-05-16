@@ -43,8 +43,8 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 <img
                   src="/assets/icons/red-heart.svg"
                   alt="heart"
-                  width={16}
-                  height={16}
+                  width={20}
+                  height={20}
                 />
                 <p className="product-likes">{product.likes}</p>
 
