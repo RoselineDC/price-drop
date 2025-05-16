@@ -38,7 +38,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 Visit Product
               </Link>
             </div>
-            <div className=""
+            <div className="flex items-center gap-3"></
           </div>
         </div>
       </div>
