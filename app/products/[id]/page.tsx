@@ -33,7 +33,7 @@ const ProductDetails = async  ( {params: { id }}: Props) => {
             </p>
             <Link href={product.title} 
             target='_blank'
-            className=' text-sm underline text-gray-500'            
+            className=' text-base text-black  underline text-gray-500'            
             />
           </div>
 
