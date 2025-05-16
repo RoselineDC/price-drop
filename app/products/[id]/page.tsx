@@ -155,7 +155,10 @@ const ProductDetails = async ({ params: { id } }: Props) => {
         MODAL
       </div>
      <div className="flex flex-col gap-60">
-      <div cla>
+      <div className="flex flex-col gap-5">
+        <h1>
+          
+        </h1>
 
       </div>
 
