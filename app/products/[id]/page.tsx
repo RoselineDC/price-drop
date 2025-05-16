@@ -14,7 +14,7 @@ const ProductDetails = async  ( {params: { id }}: Props) => {
     if(!product) redirect('/')
   return (
 	<div className='product-container'>
-	  <div >
+	  <div class >
       <div>
       <img 
       src={product.image}
