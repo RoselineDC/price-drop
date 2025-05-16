@@ -4,7 +4,7 @@ import { connect } from "http2";
 import { scrapeAmazonProducts } from "../scraper";
 import { connectToDB } from "../mongoose";
 import Product from "../models/product.model";
-import {getLowestPrice } from "../utils";
+import {getLowestPrice, getAveragePrice } from "../utils";
  
 export async function scrapeAndStoreProducts(productUrl: string) {
 
@@ -58,9 +58,6 @@ export async function scrapeAndStoreProducts(productUrl: string) {
 
 }
 
-function getAveragePrice(updatedPriceHistory: any): number {
-    throw new Error("Function not implemented.");
-}
 export async function getProductById(productId: string) {
     try{
         connectToDB();
