@@ -1,5 +1,6 @@
 import { getProductById } from '@/lib/action';
 import { redirect } from 'next/navigation';
+import Link from 'next/link';
 import React from 'react'
 
 type Props = {
