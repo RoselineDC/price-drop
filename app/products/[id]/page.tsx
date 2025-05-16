@@ -39,7 +39,9 @@ const ProductDetails = async ({ params: { id } }: Props) => {
               </Link>
             </div>
             <div className="flex items-center gap-3">
-              <div 
+              <div className="product-hearts">
+                
+              </div>
             </div>
           </div>
         </div>
