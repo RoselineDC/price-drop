@@ -24,7 +24,7 @@ const ProductDetails = async  ( {params: { id }}: Props) => {
       className='mx-auto'     
       />
     </div>
-    <div >
+    <div className=''>
 
     </div>
     </div>
