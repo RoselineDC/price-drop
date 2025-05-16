@@ -20,7 +20,7 @@ const ProductDetails = async  ( {params: { id }}: Props) => {
       alt={product.title}
       width={580}
       height={400} 
-           
+      className='mx-auto'     
       />
     </div>
 	</div>
