@@ -38,7 +38,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 Visit Product
               </Link>
             </div>
-            <div 
+            <div cla
           </div>
         </div>
       </div>
