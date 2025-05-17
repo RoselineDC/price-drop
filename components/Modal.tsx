@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 
 const Modal = () => {
+    
   return (
     <>
     <button type='button' className='btn'>
