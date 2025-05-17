@@ -26,6 +26,7 @@ const PriceInfoCard = ({title, iconSrc, value, borderColor} : Props) => {
             </p>
 
         </div>
+         
 
     </div>
   )
