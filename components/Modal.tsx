@@ -4,7 +4,8 @@ const Modal = () => {
   return (
     <>
     <button type='button' className='btn'>
-        Track    </button>
+        Track
+    </button>
     </>
   )
 }
