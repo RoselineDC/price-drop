@@ -11,6 +11,7 @@ const Modal = () => {
     <button type='button' className='btn'>
         Track
     </button>
+    <
     </>
   )
 }
