@@ -11,7 +11,7 @@ const Modal = () => {
     <button type='button' className='btn'>
         Track
     </button>
-    <Dialog open={isOpen} onClose={setIsOpen}>
+    <Dialog open={isOpen} onClose={setIsOpen}>5
     </>
   )
 }
