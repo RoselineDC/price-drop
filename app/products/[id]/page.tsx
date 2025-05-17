@@ -6,6 +6,7 @@ import { Product } from "@/lib/types";
 import { formatNumber } from "@/lib/utils";
 import PriceInfoCard from "@/components/PriceInfoCard";
 import ProductCard from "@/components/productCard";
+import Modal from "@/components/Modal";
 
 type Props = {
   params: {
