@@ -1,5 +1,5 @@
 import React from 'react'
-import { useST}
+import { useState } from 'react'
 
 const Modal = () => {
   return (
