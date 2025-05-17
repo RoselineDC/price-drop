@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 
 const Modal = () => {
-    let 
+    let [isOp]
   return (
     <>
     <button type='button' className='btn'>
