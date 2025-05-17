@@ -4,7 +4,7 @@ const Modal = () => {
   return (
     <>
     <button type='button' className='btn'>
-        T
+        TRA
 
     </button>
     </>
