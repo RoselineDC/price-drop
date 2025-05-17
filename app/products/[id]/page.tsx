@@ -156,11 +156,25 @@ const ProductDetails = async ({ params: { id } }: Props) => {
       </div>
      <div className="flex flex-col gap-60">
       <div className="flex flex-col gap-5">
-        <h1>
-          
-        </h1>
+        <h3 className="text-2xl text-secondary font-semibold">
+          Product Description
+        </h3>
+        <div className="flex flex-col gap-4">
+          {
+            product?.description?.split('\n')
+          }
+
+        </div>
 
       </div>
+      <button>
+        <img
+          src="/assets/icons/bag.svg"
+          alt="check"
+          width={20}
+          height={20}
+        />
+      </button>
 
      </div>
     </div>
