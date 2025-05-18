@@ -48,7 +48,7 @@ const Modal = ({ productId }: Props) => {
               leaveTo="opacity-0"
             >
               <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
-            </Transition.Child>
+            </Transition.Child>l
 
             <span
               className="inline-block h-screen align-middle"
