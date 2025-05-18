@@ -73,6 +73,7 @@ const Modal = ({ productId }: Props) => {
                         alt="logo"
                         width={28}
                         height={28}
+                        
                       />
                     </div>
 
