@@ -3,7 +3,7 @@
 import { FormEvent, Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import Image from 'next/image'
-import { addUserEmailToProduct } from '..action/lib/actions'
+import { addUserEmailToProduct } from '..actions'
 
 interface Props {
   productId: string
